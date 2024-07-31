@@ -1,7 +1,7 @@
 package pro.sky.spring_home_work_basket.service;
 
-import pro.sky.spring_home_work_basket.model.Basket;
 import org.springframework.stereotype.Service;
+import pro.sky.spring_home_work_basket.model.Basket;
 
 import java.util.List;
 
@@ -17,6 +17,7 @@ public class BasketServiceImpl implements BasketService {
     @Override
     public void add(List<Integer> ids) {
         basket.add(ids);
+
     }
 
     @Override
