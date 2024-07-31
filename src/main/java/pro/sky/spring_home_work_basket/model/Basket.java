@@ -1,11 +1,14 @@
-package model;
+package pro.sky.spring_home_work_basket.model;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.SessionScope;
 
+import java.util.*;
+
+@Component
+@SessionScope
 public class Basket {
-    private List<Integer> basketList;
+    private final List<Integer> basketList;
 
     public Basket() {
         basketList = new ArrayList<>();
@@ -13,6 +16,10 @@ public class Basket {
 
     public List<Integer> getBasketList() {
         return basketList;
+    }
+
+    public void add(List<Integer> ids) {
+        basketList.addAll(ids);
     }
 
     @Override
