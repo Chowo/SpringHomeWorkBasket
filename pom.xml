@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>pro.sky</groupId>
-	<artifactId>spring-home-work-basket</artifactId>
+	<artifactId>springHomeWorkBasket</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-home-work-basket</name>
 	<description>basket</description>
